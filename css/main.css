@@ -146,6 +146,9 @@ img {
 	fill: var(--accent-color);
 }
 .header-link {
+	display: flex;
+	align-items: center;
+
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.5;
@@ -162,14 +165,25 @@ img {
 
 /*Main начало оформления основного контента на странице*/
 /* Hero */
-.hero,
-.footer {
-	background-color: var(--footer-color);
-}
 
 .hero {
+	max-width: 1600px;
+	min-height: 600px;
+	margin: 0 auto;
 	text-align: center;
 	padding: 200px 0px;
+
+	background-color: #c4c4c4;
+	background-image: linear-gradient(
+			to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../img/bg-Img-1600x600.jpg);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-title {
