@@ -371,6 +371,10 @@ svg {
 }
 
 /* Address*/
+.address {
+	margin-right: 70px;
+}
+
 .address-text {
 	font-style: normal;
 	font-size: 14px;
@@ -398,8 +402,44 @@ svg {
 	color: var(--accent-color);
 }
 
-.footer-social-box .social-footer li {
+.footer-social-box {
+	display: block;
+	margin-top: 12px;
+}
+
+.footer-text {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+
+	text-transform: uppercase;
+	color: var(--primary-wight-color);
+}
+
+.footer-icon {
 	display: flex;
+	justify-content: center;
+}
+
+.footer-icon li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer-icon li {
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-icon {
+	fill: var(--primary-wight-color);
+}
+
+.footer-icon .social-icon:hover,
+.footer-icon .social-icon:focus {
+	background-color: var(--accent-color);
 }
 /*Footer ==============end================*/
 /*=================================================Оформление страницы портфолио =========================================================*/
