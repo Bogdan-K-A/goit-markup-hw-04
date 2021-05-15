@@ -52,7 +52,8 @@ p {
 	margin: 0;
 }
 
-img {
+img,
+svg {
 	display: block;
 	max-width: 100%;
 }
@@ -75,12 +76,6 @@ img {
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 	text-decoration: none;
-}
-
-.footer-logo {
-	display: block;
-	margin-bottom: 20px;
-	color: var(--primary-wight-color);
 }
 
 /*================Nav====================== */
@@ -180,7 +175,6 @@ img {
 			rgba(47, 48, 58, 0.4)
 		),
 		url(../img/bg-Img-1600x600.jpg);
-
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -237,6 +231,14 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+.features-icon {
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	padding: 25px 100px;
+	background-color: #f5f4fa;
+	border-radius: 4px;
+}
 
 .description,
 .galeri-container,
@@ -249,7 +251,6 @@ img {
 .description .description-item {
 	margin-left: var(--galeri-set-gap);
 	flex-basis: calc(100% / 4 - var(--galeri-set-gap));
-	height: 101px;
 }
 
 /* Особенности========and========== */
@@ -321,11 +322,34 @@ img {
 }
 
 .cards-text {
+	margin-bottom: 16px;
+
 	font-size: 16px;
 	line-height: 1.2;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
+}
+
+.list .social {
+	display: flex;
+	justify-content: center;
+}
+.social li:not(:last-child) {
+	margin-right: 10px;
+}
+.social-icon {
+	border-radius: 50%;
+}
+
+.link-icon {
+	fill: #afb1b8;
+}
+
+.social .social-icon:hover,
+.social .social-icon:focus {
+	fill: var(--primary-wight-color);
+	background-color: var(--accent-color);
 }
 /*Section ==============end================*/
 /*Main ==============end================*/
@@ -336,9 +360,14 @@ img {
 	padding: 60px 0;
 }
 
+.footer-logo {
+	display: block;
+	margin-bottom: 20px;
+	color: var(--primary-wight-color);
+}
+
 .footer-container {
 	display: flex;
-	flex-direction: column;
 }
 
 /* Address*/
@@ -367,6 +396,10 @@ img {
 .address-link:hover,
 .address-link:focus {
 	color: var(--accent-color);
+}
+
+.footer-social-box .social-footer li {
+	display: flex;
 }
 /*Footer ==============end================*/
 /*=================================================Оформление страницы портфолио =========================================================*/
